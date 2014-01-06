@@ -31,4 +31,8 @@ E1: _24/4_=6 _remainder_=0
 
 E2: Is the remainder _0_? **Huzzar! the remainder is 0, the highest common divisor is 4! You just need to remember the answer is the value of the previous remainder, not the final quotient**
 
+###Algorithm Excercises
+Note: I will always include the difficulty rating of the excercise questions but not the questions themselves.I'm not willing to type those out, they can get rather long. If you don't know the rating system, you can find it online (google, my friend).
 
+1. [_10_] t<-a,a<-b,b<-c,c<-d,d<-t
+2. [_15_] 
