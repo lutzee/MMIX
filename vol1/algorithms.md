@@ -6,7 +6,7 @@ This is just a sample algorithm, for me to make sure I understand how the algori
 Reading this, im not imeediately familliar with the name, Elucid, but I do have a vague understanding of the algorithm.
 As stated, Elucids algorithm is as forth: "Given two positive integers _m_ and _n_, find their _greatest common divisor_, that is. the largest possitive integer that evenly divides both _m_ and _n_.
 
-E1: First, it is useful to know wheather or not dividing _m_ by _n_ produces any remainder. This will give a value ![equation](http://latex.codecogs.com/gif.latex?0+%5Cleq+r%3C+n)
+E1: First, it is useful to know wheather or not dividing _m_ by _n_ produces any remainder. This will give a value ![equation](http://latex.codecogs.com/gif.latex?0%5Cleqr%3Cn)
 
 E2: So, what if _r_=_0_? Well, thats simple, _n_ is the answer, because you can't go and divide _n_ by a number bigger than itself.
 
