@@ -10,7 +10,7 @@ E1: First, it is useful to know wheather or not dividing _m_ by _n_ produces any
 
 E2: So, what if _r_=_0_? Well, thats simple, _n_ is the answer, because you can't go and divide _n_ by a number bigger than itself.
 
-E3: Finally, if _r_ != _0_ what do we do to find the answer? The answer is a reduce function, ![equation2](http://latex.codecogs.com/gif.latex?m%5Cleftarrow%26space%3Bn%2C%26space%3Bn%26space%3B%5Cleftarrow%26space%3Br), and go back to step E1.
+E3: Finally, if _r_ != _0_ what do we do to find the answer? The answer is a reduce function, ![equation2](http://latex.codecogs.com/gif.latex?m%5Cleftarrow%26%20%3Bn%2C%26%20%3Bn%26%20%3B%5Cleftarrow%26%20%3Br), and go back to step E1.
 
 This is where I get a little lost thinking about it, so I'm going to apply some real numbers too it. 
 Thankyou random number generator, I have the numbers _m_= 416 and _n_=196.
