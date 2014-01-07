@@ -38,6 +38,6 @@ Note: I will always include the difficulty rating of the excercise questions but
 
 2. [_15_] Taking two random positive numbers for _m_ and _n_, probability dictates half of all random numbers selected, _m_ will be greater than _n_(assuming we ignore any cases where both numbers are the same, as the result will equal both values of _m_ and _n_ in these cases.). Likewise, half of the random numbers selected _n_ will be greater than _m_.  We now have half all possibilities obeying the rule set out. 
 
-Looking at the other half of all possibilities, running these through step E1 would result in a quotient of 0, and remainder of _m_. But not all is lost, moving on to step E2, taking the value of _n_ (the larger number) and moving it to _m_, _m_ becomes a large number, and then moving the remainder _r_ to _n_, where _r_ is the original value of _m_ (the smaller number), we now have _m > n_ which now agrees with the original statement. This only took one extra loop of the algorithm over the cases where _m > n_ originally.
+    Looking at the other half of all possibilities, running these through step E1 would result in a quotient of 0, and remainder of _m_. But not all is lost, moving on to step E2, taking the value of _n_ (the larger number) and moving it to _m_, _m_ becomes a large number, and then moving the remainder _r_ to _n_, where _r_ is the original value of _m_ (the smaller number), we now have _m > n_ which now agrees with the original statement. This only took one extra loop of the algorithm over the cases where _m > n_ originally.
 
 
