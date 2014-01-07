@@ -1,5 +1,5 @@
 #Algorithms
-##Page 2
+###Section 1.1
 
 ###Elucids Algorithm
 This is just a sample algorithm, for me to make sure I understand how the algorithms are laid out in the book. For consistency I will also format answers in the same format.
