@@ -34,5 +34,10 @@ E2: Is the remainder _0_? **Huzzar! the remainder is 0, the highest common divis
 ###Algorithm Excercises
 Note: I will always include the difficulty rating of the excercise questions but not the questions themselves.I'm not willing to type those out, they can get rather long. If you don't know the rating system, you can find it online (google, my friend).
 
-1. [_10_] t<-a,a<-b,b<-c,c<-d,d<-t
-2. [_15_] 
+1. [_10_] ![equation3](http://latex.codecogs.com/gif.latex?%5Cdpi%7B120%7D%20%5Clarge%20t%5Cleftarrow%20a%20%2C%20a%5Cleftarrow%20b%20%2C%20b%5Cleftarrow%20c%20%2C%20c%5Cleftarrow%20d%20%2C%20d%5Cleftarrow%20t)
+
+2. [_15_] Taking two random positive numbers for _m_ and _n_, probability dictates half of all random numbers selected, _m_ will be greater than _n_(assuming we ignore any cases where both numbers are the same, as the result will equal both values of _m_ and _n_ in these cases.). Likewise, half of the random numbers selected _n_ will be greater than _m_.  We now have half all possibilities obeying the rule set out. 
+
+Looking at the other half of all possibilities, running these through step E1 would result in a quotient of 0, and remainder of _m_. But not all is lost, moving on to step E2, taking the value of _n_ (the larger number) and moving it to _m_, _m_ becomes a large number, and then moving the remainder _r_ to _n_, where _r_ is the original value of _m_ (the smaller number), we now have _m > n_ which now agrees with the original statement. This only took one extra loop of the algorithm over the cases where _m > n_ originally.
+
+
