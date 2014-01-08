@@ -41,14 +41,20 @@ Note: I will always include the difficulty rating of the excercise questions but
     Looking at the other half of all possibilities, running these through step E1 would result in a quotient of 0, and remainder of _m_. But not all is lost, moving on to step E2, taking the value of _n_ (the larger number) and moving it to _m_, _m_ becomes a large number, and then moving the remainder _r_ to _n_, where _r_ is the original value of _m_ (the smaller number), we now have _m > n_ which now agrees with the original statement. This only took one extra loop of the algorithm over the cases where _m > n_ originally.
 
 3. [_20_] This took more thinking than I would like, and a lot of writing, but the solution came to me finally.
-    I initially started looking at if from a what could actually replace ![equation4](http://latex.codecogs.com/gif.latex?m%5Cleftarrow%266%20n) I got a bit lost in just trial running through every small step of the algorithm. I decided that I probably didn't understand fully what it meant by efficiency. I read up on using the assignment operator in more efficient manors, which lead to identifying variables that are no longer being used, and repurposing them to store a different value, rather than moving the data to be in the right place for the next step. 
+    I initially started looking at if from a what could actually replace ![equation4](http://latex.codecogs.com/gif.latex?m%5Cleftarrow%26%20n). I got a bit lost in just trial running through every small step of the algorithm. I decided that I probably didn't understand fully what it meant by efficiency. I read up on using the assignment operator in more efficient manors, which lead to identifying variables that are no longer being used, and repurposing them to store a different value, rather than moving the data to be in the right place for the next step. 
+
     For example: _m_ does not get used again after E1. We also have a new value to store, the remainder. If we use _m_ to store the remainder, we save time on an extra assignment operation (F1). Moving onto E2, we see that value _r_ does not exist, as it is now stored in _m_. So E2 is changed to check if _m_ is 0, and if so _n_ is the answer, for step F2.
+
     E3 is now going to cause a problem, the remainder is stored in _m_, with the larger value stored in _n_. Swapping the values here would just readd the extra assignment that we are trying to avoid. Instead we can reverse the division from E1 for F3 and divide _n_ by _m_, and assign the remainder into _n_, which is no longer needed.
+
     This is where we introduce a 4th step, F4, we need to test the remainder again to check if it is 0. The remainder is currently stored in _n_, so we check for _n=0_. If _n!=0_ we then return to F1.
 
     F1: [Find remainder] Divide _m_ by _n_ and let _m_ take the value of the remainder.
+    
     F2: [Is it zero?] Check if _m=0_, if _m=0_ then _n_ is the answer and the algorithm terminates.
+    
     F3: [Find the remainder again] Divide _n_ by _m_, and let _n_ take the value of the remainder.
+    
     F4: [Is it zero?] Check if _n=0_, if _n=0_ then _m_ is the answer, if not return to step F1.
 
 
