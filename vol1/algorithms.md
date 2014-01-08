@@ -57,5 +57,11 @@ Note: I will always include the difficulty rating of the excercise questions but
     
     F4: [Is it zero?] Check if _n=0_, if _n=0_ then _m_ is the answer, if not return to step F1.
 
+4. [_16_] Just a basic calculation using the algorithm. Wrote a basic python script to calculate it, includes both algorithms.
+    1. 6099%2166=1767
+    2. 2166%1767=399
+    3. 1767%399=171
+    4. 399%171=57
+    5. 171%57=0
+    6. HCD=57
 
-    
